@@ -1,0 +1,62 @@
+body{
+	font-size: 20px;
+	font-family: 'Inconsolata';
+}
+.banner{
+	font-family: 'Trade Winds';
+	font-size: 2em;
+	text-align: center;
+	line-height: 90%;
+}
+.scorecard{
+	grid-area: score;
+}
+.player1{
+	grid-area: p1;
+}
+.player2{
+	grid-area: p2;
+}
+.reset{
+	grid-area: reset;
+}
+.container{
+	width: 80%;
+	text-align: center;
+	margin: 0px auto;
+	display: grid;
+	grid-template-areas: 
+	'p1 p1 score p2 p2'
+	'p1 p1 reset p2 p2';
+	grid-gap: 10px;
+	background-color: #00e64d;
+	padding: 10px;
+}
+.container > div{
+	background-color: #80ffaa;
+	text-align: center;
+	padding: 20px 0;
+}
+img.pic{
+	width: 65%;
+	height: auto;
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #d0e2e2;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button#resetBtn{
+	color: #000;
+}
+.active{
+	color: #000;
+}
+.hidden{
+	color: #80ffaa;
+}
